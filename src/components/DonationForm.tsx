@@ -41,8 +41,8 @@ const DonationForm = () => {
           onChange={handleAmountChange} />
       </div>
       <div className="inputGroup mt-5">
-        {/* <Button onClick={donateFunds} text="Make Donation" /> */}
-        <GladepayButton
+        <Button onClick={donateFunds}>Make Donation</Button>
+        {/* <GladepayButton
           className="bg-green-500 p-2 px-5 hover:bg-white hover:text-black rounded-md text-white"
           onSuccess={donateFunds}
           text={`Donate ${reason} ${reason === "Medical" ? "Bills" : "Fees"}`}
@@ -52,7 +52,7 @@ const DonationForm = () => {
           email="abc@gmail.com"
           description={reason}
           is_production={true}
-        />
+        /> */}
         {/* <GladepayButton  amount={1000} text="Donate" /> */}
       </div>
     </div>

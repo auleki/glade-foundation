@@ -1,4 +1,4 @@
-const Button = ({ onClick, children }: { onClick: () => any, children: React.ReactNode }) => {
+const Button = ({ onClick, children }: { onClick: (response: any) => Promise<void>, children: React.ReactNode }) => {
   return (
     <button
       onClick={onClick}
