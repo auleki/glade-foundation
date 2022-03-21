@@ -20,8 +20,8 @@ const Header = () => {
     }
   }
   return (
-    <div className="h-screen lg:flex-row px-5 flex flex-col-reverse">
-      <div className="flex-1 text-center lg:text-left mt-60 md:ml-20 align-center">
+    <div className="lg:h-screen lg:flex-row px-5 flex flex-col-reverse">
+      <div className="flex-1 text-center lg:text-left lg:mt-60 mt-10 md:ml-20 align-center">
         <h1 className="text-4xl lg:text-5xl">Donate to COVID-19 Victims</h1>
         <h1 className="text-slate-400 mt-5 mb-10">Our mission is to lend a hand to those we need help</h1>
         {/* Donation form */}

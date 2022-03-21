@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav className="drop-shadow-xl p-5 shadow flex items-center justify-between">
-      <h1 className="text-3xl cursor-pointer hover:text-purple-400">GLADE</h1>
+      <h1 className="text-2xl cursor-pointer hover:text-purple-400">GLADE</h1>
       {/* <div className="sm:hidden">
 
         <div className="position-absolute">
