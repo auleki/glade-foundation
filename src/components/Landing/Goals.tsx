@@ -12,17 +12,17 @@ const Goals = () => {
     <div className="my-20 px-5 sm:px-0">
       <h1 className="text-3xl text-center">Goals</h1>
       <div className="py-5 text-center flex flex-col items-center">
-        <ul className="text-lg mb-5 text-left flex flex-col inline-flex text-slate-500">
+        <ul className="text-lg mb-5 text-left flex flex-col inline-flex text-slate-500 gap-6">
           <li className="flex items-center gap-2">
-            <span className="text-3xl text-slate-600"><BiDonateHeart /></span>
+            <span className="text-3xl outline outline-purple-300 rounded-full bg-purple-600 p-3 text-white"><BiDonateHeart /></span>
             <span>Assist people who have been affected by Covid 19</span>
           </li>
           <li className="flex items-center gap-2">
-            <span className="text-3xl text-slate-600"><BiMoney /></span>
+            <span className="text-3xl outline outline-purple-300 rounded-full bg-purple-600 p-3 text-white"><BiMoney /></span>
             <span>Help to pay school fees for Covid 19 victims</span>
           </li>
           <li className="flex items-center gap-2">
-            <span className="text-3xl text-slate-600"><BiFirstAid /></span>
+            <span className="text-3xl outline outline-purple-300 rounded-full bg-purple-600 p-3 text-white"><BiFirstAid /></span>
             <span>Settle hospital bills of Covid 19 victims</span>
           </li>
         </ul>
