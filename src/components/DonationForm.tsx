@@ -41,7 +41,7 @@ const DonationForm = () => {
           onChange={handleAmountChange} />
       </div>
       <div className="inputGroup mt-5">
-        <Button onClick={donateFunds}>Make Donation</Button>
+        <Button onClick={donateFunds}>Make Donation </Button>
         {/* <GladepayButton
           className="bg-green-500 p-2 px-5 hover:bg-white hover:text-black rounded-md text-white"
           onSuccess={donateFunds}
