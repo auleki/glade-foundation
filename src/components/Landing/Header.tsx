@@ -1,11 +1,33 @@
-import { useState } from "react"
-import { GladepayButton } from "react-gladepay-2"
+import { useState, useEffect } from "react"
 import Button from "../Button"
-import DonateButton from "../DonateButton"
+import { instance } from "../../api/axiosInstance";
 
 const Header = () => {
   const [amount, setAmount] = useState<number>(100)
 
+  const makePayment = async () => {
+    const payObj = {
+      "action": "charge",
+      "paymentType": "bank_transfer",
+      "user": {
+        "firstname": "John",
+        "lastname": "Doe",
+        "email": "johndoe@example.com",
+        "ip": "192.168.33.10",
+        "fingerprint": "cccvxbxbxb"
+      },
+      "amount": "1500",
+      "country": "NG",
+      "currency": "NGN",
+      "business_name": "Eva Empire"
+    }
+    const response = await instance.patch("/payment", payObj)
+    console.log(response)
+  }
+
+  useEffect(() => {
+    makePayment()
+  }, [])
 
   const handleAmountChange = (e: any) => setAmount(e.target.value)
 
